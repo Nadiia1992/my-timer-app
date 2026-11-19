@@ -1,0 +1,97 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+}
+
+
+.timer-box {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 320px;
+}
+
+
+.timer-box input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.timer-box input:focus {
+  border-color: #3b82f6;
+}
+
+.timer-box input:disabled {
+  background-color: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+.display {
+  font-size: 30px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  margin: 24px 0;
+  color: #111827;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.buttons button {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+}
+
+.buttons button:active {
+  transform: scale(0.97);
+}
+
+
+.buttons button:nth-child(1) {
+  background-color: #53d29d;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #dc2626;
+}
+
+.buttons button:nth-child(3) {
+  background-color: #6b7280;
+}
